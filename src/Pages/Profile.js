@@ -30,7 +30,7 @@ export default function Profile(props) {
               <div className="change-card-display userprofile-imagename-container">
                 <div>
                   <img
-                    src={user.ProfilePicture}
+                   src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
                     alt={user.FirstName + " " + user.LastName}
                     className="userprofile-profilepic"
                   />
@@ -143,7 +143,7 @@ export default function Profile(props) {
                 ? Object.values(user.projects).map((project) => (
                     <div className="projects">
                       <div className="userprofile-projectName">
-                        {project.projectName} (10/2021 - 11/2021)
+                        {project.projectName} (07/2023 - 09/2023)
                       </div>
                       {(project.projectURL || project.projectDesc) && (
                         <ul>

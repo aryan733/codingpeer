@@ -7,8 +7,8 @@ export default function CreateaccountForm() {
   const { currentUser } = useAuth();
   const currentUserId = currentUser.uid;
   const currentUserEmail = currentUser.email;
-  const profilePicture =
-  "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png";
+  // const profilePicture =
+  // "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png";
   const intrests = [];
 
   const [firstName, setFirstName] = useState("");
@@ -53,27 +53,27 @@ export default function CreateaccountForm() {
   const createAccount = async (e) => {
     e.preventDefault();
 
-    const response = await fetch(profilePicture);
-    const blob = await response.blob();
+    // const response = await fetch(profilePicture);
+    // const blob = await response.blob();
 
     // Storing Image to Firebase Storage
     try {
       setError("");
       setLoading(true);
-      storage
-        .ref(`/profile-pictures/${currentUserId}`)
-        .put(blob)
-        .on("state_changed", () => {
+      // storage
+      //   .ref(`/profile-pictures/${currentUserId}`)
+      //   .put(blob)
+      //   .on("state_changed", () => {
           // Getting Download Link
-          storage
-            .ref("profile-pictures")
-            .child(currentUserId)
-            .getDownloadURL()
-            .then(async (url) => {
+          // storage
+          //   .ref("profile-pictures")
+          //   .child(currentUserId)
+          //   .getDownloadURL()
+          //   .then(async (url) => {
               // Storing data and url of image in Realtime database
               const user = {
                 UserId: currentUserId,
-                ProfilePicture: url,
+                // ProfilePicture: url,
                 Email: currentUserEmail,
                 FirstName: firstName,
                 LastName: lastName,
@@ -96,8 +96,8 @@ export default function CreateaccountForm() {
               await database.ref("users/" + currentUserId).set(user);
               alert("Account Created Successfully!");
               history.push("/dashboard/");
-            });
-        });
+            // });
+        // });
     } catch {
       setError("Problem Occured during creating account! Try Again");
     }

@@ -40,7 +40,7 @@ export default function Header() {
                 className="remove-td"
                 style={{ color: "#048dbb" }}
               >
-                coding<span style={{ color: "rgb(93, 93, 93)" }}>peer</span>
+                Dev<span style={{ color: "rgb(93, 93, 93)" }}>Connect</span>
               </Link>
             </div>
             <ul className="nav-links header-navlinks">
@@ -71,7 +71,7 @@ export default function Header() {
                   className="profile-dropdown"
                 >
                   <img
-                    src={user.ProfilePicture}
+                    src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
                     alt="profile-pic"
                     className="nav-profile-pic"
                   />

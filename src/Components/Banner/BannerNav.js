@@ -20,7 +20,7 @@ export default function BannerNav() {
             </div>
             <div className="logo">
               <Link to="/" className="remove-td" style={{ color: "#048dbb" }}>
-                coding<span style={{ color: "black" }}>peer</span>
+                Dev<span style={{ color: "black" }}>Connect</span>
               </Link>
             </div>
           </div>

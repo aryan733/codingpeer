@@ -13,7 +13,7 @@ export default function Footer() {
                 <img src={logo} alt="logo" className="footer-logo-img" />
               </div>
               <div className="px-2">
-                <div className="footer-logo-name">CODINGPEER</div>
+                <div className="footer-logo-name">DevConnect</div>
                 <div className="footer-sub-logo-name">Find your coding partner</div>
               </div>
             </div>
@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="field">
               <div className="footer-titles">Contact us</div>
               <div>
-                <Link to="#" className="footer-mail">codingpeer@gmail.com</Link>
+                <Link to="#" className="footer-mail">devconnect@gmail.com</Link>
               </div>
             </div>
             <div className="field">
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
         </div>
         <hr />
-        <div>&copy; 2021 Codingpeer. All Rights Reserved.</div>
+        <div>&copy; 2023 DevConnect. All Rights Reserved.</div>
       </div>
     </footer>
   );
